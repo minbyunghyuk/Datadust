@@ -4,6 +4,7 @@ package com.bitacademy.datadust.controller;
 import com.bitacademy.datadust.repositroy.ResultItemRepository;
 import com.bitacademy.datadust.ssg.model.ResultItemEntity;
 import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
+@CrossOrigin("*")
 @RequestMapping("/re")
 @RestController
 @AllArgsConstructor
